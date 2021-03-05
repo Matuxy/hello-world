@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="kk.css">
+<!-- CSS only -->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+    
+    .navbar {
+        overflow: hidden;
+        background-color: rgba(201, 140, 178, 0.993);
+        opacity: 0.7;
+        font-weight: bold;
+    }
+    
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    .subnav {
+        float: left;
+        overflow: hidden;
+    }
+    
+    .subnav .subnavbtn {
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        color: black;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+    
+    .navbar a:hover,
+    .subnav:hover .subnavbtn {
+        background-color: rgb(136, 44, 95);
+        opacity: 0.7;
+    }
+    
+    .subnav-content {
+        display: none;
+        position: absolute;
+        left: 0;
+        background-color: rgb(67, 194, 94);
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .subnav-content a {
+        float: left;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .subnav-content a:hover {
+        background-color: #eee;
+        color: black;
+    }
+    
+    .subnav:hover .subnav-content {
+        display: block;
+    }
+</style>
+</head>
+<div class="row">
+    <div class="span4">
+        <div class="header-logo">
+            <img src="etusivu_logo2.png" alt="Kukkakauppa Neilikka">
+        </div>
+    </div>
+</div>
+
+<body>
+
+    <div class="navbar">
+        <a href="kukkakauppa.php">Etusivu</a>
+        <div class="subnav">
+            <button class="subnavbtn">Tuotteet <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="kasvit_sisa.php">Sisäkasvit</a>
+                <a href="kasvit_ulko.php">Ulkokasvit</a>
+                <a href="tools.php">Työkalut</a>
+                <a href="other.php">Muut</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Myymälät <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="kk_hki.php">Helsinki</a>
+                <a href="kk_espoo.php">Espoo</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <a href="tietolomake.php">Ota yhteyttä</a>
+        </div>
+        <div class="subnav" style="float: right" onclick="openForm()">
+            <!--<button class="open-button" onclick="openForm()">Open Form</button>-->
+            <a href="/index.php">Kirjaudu sisään</a>
+        </div>
+
+    </div>
+
+
+
+
+    <!--
+<container>
+    <div class="row">
+        <div class="span4">
+            <div class="header-logo">
+                <img src="etusivu_logo.png" alt="Kukkakauppa Neilikka">
+            </div>
+        </div>
+    </div>
+    <body>
+        <div ul>
+            <div class="subnav">
+                <button class="subnavbtn"><a style="color: black" href="kukkakauppa.php">Etusivu</a></button>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">Tuotteet<i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="kasvit_sisa.php">Sisäkasvit</a>
+                    <a href="kasvit_ulko.php">Ulkokasvit</a>
+                    <a href="tools.php">Työkalut</a>
+                    <a href="other.php">Muut</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">Myymälät<i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="kk_hki.php">Helsinki</a>
+                    <a href="kk_espoo.php">Espoo</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn"><a style="color: black"  href="tietolomake.php">Ota yhteyttä</a>
+            </button>
+            </div>
+
+            <div class="subnav" class="span5" style="float:right">
+                <button class="subnavbtn"><a style="color: black" href="rekisterointi.php">Kirjaudu sisään</a></button>
+            </div>
+        </nav>
+    </body>
+</container>
+-->
